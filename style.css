@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Josefin+Sans&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+  }
+
+
+body{
+    background-color: var(--fundo);
+    
+}  
+
+
+/* Mudança de temas */
+
+  body[data-theme = "claro"]{
+    --fundo: #E0C1AD;
+    --texto: #000;
+    --fundo2: #B88E7A;
+    --cabecalhoFundo: #00000065;
+    --linkVisitado: #99715f;
+    --jogo1: url("media/lis1-ep1-wallpaper.jpg");
+    --jogo2: url("media/lis2-wallpaper.jpg");
+    --jogo3: url("media/alex-wallpaper.jpg");
+
+}
+
+
+body[data-theme = "escuro"]{
+    --fundo: #424A61;
+    --texto: rgb(236, 236, 225);
+    --fundo2: #373d52;
+    --cabecalhoFundo: #2b31425e;
+    --linkVisitado: #ecd2c6;
+    --jogo1: url("media/lis1-ep4-wallpaper.jpg");
+    --jogo2: url("media/lis2-ep2-wallpaper.jpg");
+    --jogo3: url("media/lis3-wallpaper-escuro.jpg");
+
+}
+
+/*Cabeçalho*/
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    background-color: var(--cabecalhoFundo);
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+ 
+   
+}
+
+.cabecalho .imagem{
+    height: 82px;
+}
+
+
+.cabecalho .titulo{
+    color: rgb(236, 236, 225);
+   
+   
+}
+
+
+.links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-weight: bold;
+
+}
+
+
+a:link {
+    color: rgb(236, 236, 225);
+
+
+}
+
+
+a:visited {
+    color: rgb(236, 236, 225);
+
+
+}
+
+
+/*Primeira parte - Apresentação*/
+
+.wallpaper{
+    -webkit-mask-image: linear-gradient(to top, transparent 0.1%, black 50%);
+
+}
+
+.primeira{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--fundo);
+}
+
+
+.primeira .textos{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2px;
+    margin-bottom: 100px;
+    color: var(--texto);
+    text-align: justify;
+
+
+
+}
+
+
+.primeira .texto1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 60px;
+    
+
+}
+
+
+.primeira .texto2 {
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 560px;
+
+}
+
+
+
+.primeira .botao{
+    max-height: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   
+
+
+}
+
+
+/*Segunda parte - jogos*/
+.segunda{
+    background-color: var(--fundo2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--texto);
+
+}
+
+.segunda p{
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 50px;
+}
+
+
+.segunda .jogos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+   
+}
+
+.segunda .jogo1{
+    background-image: var(--jogo1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+
+}
+
+.segunda .jogo2{
+    background-image: var(--jogo2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+
+}
+
+.segunda .jogo3{
+    background-image: var(--jogo3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+
+}
+
+.jogo1, .jogo2, .jogo3{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+        
+}
+
+.jogos img{
+    width: 350px;
+    height: 350px;
+    opacity: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 50ms;
+    border: solid 2px white;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+
+.jogos img:hover{
+    opacity: 80%;
+    scale: 110%;
+    
+}
+
+
+
+.segunda figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+
+
+}
+
+
+/*Terceira parte - DLCS*/
+
+.terceira{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--texto);
+    
+    
+}
+
+.terceira p, #titulo{
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    
+}
+
+
+.soTexto{
+    margin-top: 100px;
+}
+
+.spinOff img{
+    border: solid 2px white;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 50ms;
+
+
+}
+
+.spinOff{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+    
+
+}
+
+
+.spinOff img:hover{
+    opacity: 80%;
+    scale: 110%;
+    
+}
+
+
+.btsContainer{
+    background-image: url("media/bts-wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    color: rgb(236, 236, 225);
+    background-attachment: fixed;
+    
+    border-top: solid 0.5px white;
+    border-bottom: solid 0.5px white;
+
+}
+
+.spinOff .textos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.cpContainer{
+    background-image: url("media/cp-wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    color: rgb(236, 236, 225);
+    background-attachment: fixed;
+    
+    border-bottom: solid 0.5px white;
+}
+
+
+
+/*Rodapé*/
+
+footer{
+    background-color: #1b2227;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 50px 0px;
+    box-shadow: 2px 2px 12px 0px black;
+    border-radius: 20px;
+
+}
+
+form{
+    background-image: radial-gradient( #262f36, #1b2227);
+    max-width: 500px;
+    height: 450;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+form h1, h3{
+    text-align: center;
+    color: #c1d3da;
+
+}
+
+.inputs{
+    position: relative;
+    margin: 20px 0;
+}
+
+.inputs label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: #c1d3da;
+    transition: all;
+    transition-duration: 0.2s;
+    cursor: text;
+
+}
+
+.in{
+    background-color: #00000000;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #1b2227;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+    color: #e2f0f7;
+    
+}
+
+
+form .inputs .in:focus ~ label,
+form .inputs .in:valid ~ label{
+    transform: translateY(-25px);
+    font-size: 14px;
+    color: #daedf5;
+}
+
+
+
+.inOp{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.inOp select{
+    border-width: 0;
+    padding: 0;
+    width: 100%;
+    flex: 1;
+    background-color: #262f36;
+    color: #daedf5;
+    text-align: center;
+
+
+}
+
+
+
+.btnEnviar{
+    width: 100px;
+    text-align: center;
+    
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #1b2227;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#contato{
+    text-align: center;
+    color: #9fb4bd;
+    font-size: 18px;
+    margin-bottom: 30px;
+    transition: all;
+    transition-duration: 75ms;
+    transition-delay: 50ms;
+    
+
+}
+
+#contato:hover{
+    color: #d3eaf3;
+    font-size: 19px;
+}
+
+footer p{
+    padding: 2%;
+    color: rgb(236, 236, 225);
+
+}
+
+/*Adapatação Mobile*/
+
+
+@media only screen and (max-width: 800px){
+    
+
+    body{
+    display: flex;
+    flex-wrap: wrap;
+  
+    
+    }
+
+    .cabecalho{
+       height: 100%;
+       width: 100%;
+
+    }
+
+    .cabecalho .titulo{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .cabecalho .imagem{
+        display: none;
+
+    }
+
+    
+
+    .links{
+        display: none;
+
+    }
+
+    .wallpaper{
+        height: auto;
+
+    }
+
+
+    /*Primeira Parte - Apresentação*/
+    .primeira{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: medium;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .primeira .textos{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 5%;
+
+    
+    }
+
+    .primeira .texto1 {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 60px;
+        text-align: center;
+
+    
+    }
+
+    .primeira .texto2 {
+        font-size: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: justify;
+       
+
+    
+    }
+
+    .primeira .botao{
+        max-height: 100px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    
+    }
+
+    /*Segunda parte - jogos*/
+    .segunda{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+       
+        
+
+}
+
+.textoS{
+    padding: 10%;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+
+    
+}
+
+
+    .segunda .jogos{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 50px; 
+        width: 100%;
+        height: 100%; 
+
+}
+
+    .segunda .jogo1{
+        background-image: var(--jogo1);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%; 
+
+    }
+
+    .segunda .jogo2{
+        background-image: var(--jogo2);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%; 
+
+    }
+
+    .segunda .jogo3{
+        background-image: var(--jogo3);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%; 
+
+    }
+
+    .jogos img{
+        border: solid 2px white;
+        border-radius: 10px;
+        display: block;
+        height: 250px;
+        width: 250px;
+      
+    
+    }
+
+    .jogos img:hover{
+        opacity: 100%;
+        scale: 100%;
+
+    }
+
+
+    .segunda figcaption{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 75px;
+        font-size: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+    
+    
+    }
+
+
+    /*Terceira parte - DLCS*/
+
+    .spinOff{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 5px;
+
+    }
+
+
+
+    /*Rodapé*/
+
+    footer{
+        width: 100%;
+        height: 100%; 
+
+    }
+    
+    .container{
+        margin: 50px 0px;
+    
+    }
+
+    form{
+        background-image: radial-gradient( #262f36, #1b2227);
+        padding: 40px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+   
+}

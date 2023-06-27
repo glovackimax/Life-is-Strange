@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" href="media\icon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>Life is Strange</title>
+        <link 
+            rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+            integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+            crossorigin=""/>
+        
+    </head>
+
+<body>
+    
+    <!--Cabeçalho-->
+    <header class = "cabecalho">
+
+        <a href="https://store.steampowered.com/sale/life-is-strange/"><img class = "imagem" src="media\logo-escuro.png" alt="'lis'"></a>
+        <h1 class = "titulo">LIFE IS STRANGE</h1>
+            <nav>
+                <ul class = "links">
+                    <li> <a href="#">Inicio </a></li>
+                    <li> <a href="#primeira"> O que é </a> </li>
+                    <li> <a href="#segunda"> Jogos </a> </li>
+                    <li> <a href="#terceira"> Spin offs </a> </li>
+                </ul>    
+            </nav>
+        </header>
+      
+
+        
+    <!--Conteúdos da página-->
+    <!-- Primeira parte-->
+    <!-- Apresentação do conteúdo -->
+        <img class="wallpaper" id="wallpaper" src="media\wallpaper.jpg" alt="Wallpeper" width="100%">
+    
+    
+    <section class="primeira" id="primeira">
+        <aside class = "textos">
+            <p class = "texto1">Life is Strange</p> 
+            <p class = "texto2" align = "justify">
+    É uma série de jogos em episódios, publicada pela Square Enix.
+    O jogo se baseia em escolhas e consequências.
+    Os episódios podem ser jogados por: 
+    PC, PlayStation 4, PS3, Xbox One, Xbox 360, iOS e Android.  </p>
+
+        </aside>
+
+        <input class="botao" type="image" src="media\symbol-claro.png" title="Essa ação terá consequências" alt="Life is Strange">
+
+
+    </section>
+
+   <!-- Segunda parte  -->
+    <!-- Jogos da Série -->
+    <section class = "segunda" id="segunda">
+        <p class="textoS">A franquia Life is Strange possui três jogos principais:<br>
+        Life is Strange (2015), Life is Strange 2 (2018) e Life is Strange: True Colors, <br>
+        além de dois Spin-offs.</p>
+
+         <!-- Capa dos jogos -->
+        <div class ="jogos"> 
+            <figure class="jogo1">
+                <a href="refs/lis1.html"> <img class= "capa1" src="media\lis1-capa.jpg" alt="Capa do Jogo Life is Strange"> </a>
+
+                <figcaption>Life is Strange (2015)</figcaption>
+            </figure>
+
+
+            <figure class ="jogo2">
+                <a href="refs/lis2.html"> <img class= "capa2" src="media\lis2-capa.jpg" alt="Capa do Jogo Life is Strange 2"> </a>
+                
+                <figcaption>Life is Strange 2 (2018)</figcaption>
+            </figure>
+
+
+            <figure class="jogo3">
+                <a href="refs/lis3.html"> <img class= "capa3" src="media\lis3-capa.jpeg" alt="Capa do Jogo Life is Strange: True Colors"> </a>
+                
+                <figcaption>Life is Strange: True Colors (2021)</figcaption>
+            </figure>
+        </div>
+    </section>
+     <!-- Terceira parte  -->
+    <!-- Spin off -->
+    <section class = "terceira" id="terceira">
+
+        
+          <!-- Before the Storm  -->
+        <section class="btsContainer">
+            <p class="soTexto">A saga de jogos também conta com alguns Spin-offs e DLC's <br>
+            que complementam as histórias dos jogos.</p>
+         <figure class="spinOff">
+            <a href="https://www.youtube.com/watch?v=oLjlBv-kHGg"> <img src="media/bts-cover.jpg" alt="" height="400"> </a>
+            
+             <div class ="textos">
+                <h1 id="titulo">Life is Strange: Before the Storm</h1>
+                <p>Life is Strange: Before the Storm apresenta Chloe Price, <br> uma rebelde de 16 anos que faz uma amizade inesperada com Rachel Amber, <br> uma garota bonita e popular destinada ao sucesso. <br> <br>
+                Quando o mundo de Rachel é virado do avesso por um segredo de família,<br> é sua nova aliada que dá força às duas para enfrentarem seus demônios.</p>
+
+                </div>
+            </figure>
+        </section>
+         
+
+         <!-- Captain spirit  -->
+        <section class="cpContainer">
+         <figure class="spinOff">
+            <div class ="textos">
+               <h1 id="titulo">The Awesome Adventures of Captain Spirit</h1>
+               <p>A história acompanha Chris Eriksen, <br> um menino que cria seu próprio alter ego super-herói chamado Capitão Spirit <br> com o objetivo de lidar com a perda de sua mãe.<br> <br>
+               O jogo pode ser encontrado de graça na Steam e<br> serve como uma introdução para o Life is Strange 2.</p>
+
+            </div>
+            <a href="https://www.youtube.com/watch?v=EolUfLJpUwc"> <img src="media/cp-cover.png" alt="" height="400"> </a>
+
+            </figure>
+        </section>
+     </section>
+
+    <!-- Rodapé  -->
+     <footer>
+        <section class="formContainer">
+            <div class="container">
+                <form action="https://github.com/orgs/ifpruva/teams/joao-gabriel-e-maria-luisa">
+                    <h1>Fale conosco!</h1>
+
+                    <div class="inputs">
+                        <input type="text" id="nome" class="in" required autocomplete="off"> 
+                        <label for="nome">Nome:</label>
+                            
+                    </div>
+
+                    <div class="inputs">
+                        <input type="text" id="email" class="in" required autocomplete="off">
+                        <label for="email">E-mail:</label>
+                        
+                    </div>
+
+                    <div class="inOp">
+                        <h3>Qual o seu jogo favorito?</h3>
+                        <select name="opcoes">
+                            <option value="lis1">Life is Strange 1
+                            <option value="lis2">Life is Strange 2
+                            <option value="lis3">Life is Strange: True Colors
+                        </select>
+                    </div>
+
+                    <div class="btnEnviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <a href="refs/contato.html"> <h1 id="contato">Entre em contato</h1> </a>
+
+        <p>&copy; 2023 Life is Strange Fan Site</p>
+           
+     </footer>
+     <script src="./script.js"></script>
+</body>
+</html>

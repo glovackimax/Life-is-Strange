@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+
+  }
+
+body{
+  background-color: #4A2E20;  
+
+}
+
+
+
+/* Cabeçalho */
+  .cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    background-color: #4a2e2071;
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+    color: #FFFFFF;
+
+}
+
+.cabecalho .imagem{
+    height: 82px;
+}
+
+
+a:link {
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #FFFFFF;
+
+}   
+
+
+.links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-weight: bold;
+
+
+}
+
+/* Primeira Parte - Sinopse e Resumo */
+
+.primeira{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: justify;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.primeira p{
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: justify;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    width: 600px;
+}
+
+.primeiraContainer{
+    background-image: url("../media/lis3-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; 
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.primeira .esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-left: 156px;
+
+}
+
+
+.primeira .apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+
+}
+
+
+.primeira .sinopse{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+.sinopse .titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 42px;
+    gap: 10px;
+
+}
+
+
+.local{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+.local p{
+    margin-bottom: 100px;
+
+}
+
+
+.sinopse img{
+    width: 69px;
+    height: 61px;
+}
+
+
+.apresentacao img{
+    width: 321px;
+    height: 200px;
+
+}
+
+
+.local img{
+    width: 41px;
+    height: 41px;
+
+
+}
+
+
+.local pre{
+
+    margin-bottom: 100px;
+
+}
+
+/* Segunda parte - Personagens */
+
+.segunda{
+    border-top: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.segunda #titulo{
+    text-align: justify;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+.foto img{
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+.foto{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+    
+
+}
+
+
+.alexContainer{
+    background-image: url("../media/lis3-wallpaper-claro.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    color: rgb(236, 236, 225);
+
+}
+
+.alexContainer h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 42px;
+
+}
+
+.foto .textos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.gabeContainer{
+    background-image: url("../media/gabe-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; 
+    color: rgb(236, 236, 225);
+}
+
+/* Terceira parte - Capítulos */
+
+.terceira #titulo{
+    margin-top: 40px;
+    text-align: justify;
+    font-size: 42px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.terceira{
+    border-top: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+   
+}
+
+.terceira h1{
+    text-align: justify;
+    font-size: 28px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.ep1, .ep2, .ep3, .ep4, .ep5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.terceira p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.ep1{
+    background-image: url("../media/lis3-ep1-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    background-attachment: fixed
+    
+}
+
+.ep2{
+    background-image: url("../media/lis3-ep2-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    background-attachment: fixed
+
+}
+ 
+.ep3{
+    background-image: url("../media/lis3-ep3-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; 
+    background-attachment: fixed
+
+}
+ 
+.ep4{
+    background-image: url("../media/lis3-ep4-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    background-attachment: fixed
+
+}
+
+.ep5{
+    background-image: url("../media/lis3-ep5-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    background-attachment: fixed
+
+}
+
+/*Rodapé*/
+
+footer{
+    border-top: solid 1px white;
+    background-color: #1b2227;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 50px 0px;
+    box-shadow: 2px 2px 12px 0px black;
+    border-radius: 20px;
+
+}
+
+table{
+    background-image: radial-gradient( #262f36, #1b2227);
+    max-width: 500px;
+    height: 450;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+table th{
+    color: #c1d3da;
+    font-size: 18px;
+
+}
+
+table td{
+    color: #e2f0f7;
+
+}
+
+
+
+#contato{
+    text-align: center;
+    color: #9fb4bd;
+    font-size: 18px;
+    margin-bottom: 30px;
+    transition: all;
+    transition-duration: 75ms;
+    transition-delay: 50ms;
+    
+
+}
+
+#contato:hover{
+    color: #d3eaf3;
+    font-size: 19px;
+}
+
+footer p{
+    padding: 2%;
+    color: rgb(236, 236, 225);
+
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+      
+        }
+
+        /*Header*/
+    
+        .cabecalho{
+            height: 100%;
+            width: 100%;
+     
+         }
+ 
+         .cabecalho .titulo{
+             font-size: 15px;
+             margin-top: 20px;
+             margin-bottom: 20px;
+             text-align: center;
+     
+         }
+     
+         .cabecalho .imagem{
+             display: none;
+     
+         }
+     
+         
+     
+         .links{
+             display: none;
+     
+         }
+
+         /**/
+
+        .wallpaper{
+            height: auto;
+
+        }
+
+         /*Primeira parte*/
+
+         .primeira{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-size: medium;
+            width: 100%;
+            height: 100%;
+            
+    
+        }
+
+        .primeira p{
+           width: 100%;
+           height: 100%;
+           font-size: 15px;
+        }
+
+        .primeira h1{
+            font-size: 25px;
+            
+
+        }
+
+        .primeiraContainer{
+            flex-direction: column;
+            padding: 5%;
+
+            
+
+        }
+
+        .primeira .esquerda{
+            margin-left: 0;
+
+        }
+
+        #logo{
+            width: 250px;
+            height: 150px;
+
+        }
+
+         /*Segunda parte*/
+
+       .alexContainer h1{
+        font-size: 32px;
+        padding: 2%;  
+       }
+
+        .segunda{
+            width: 100%;
+            height: 100%;
+            font-size: 18px;
+        }
+
+        .segunda #titulo{
+            font-size: 25px;
+
+        }
+
+        .foto{
+            flex-direction: column;
+
+        }
+
+        .foto img{
+            height: 300px;
+            width: 250px;
+
+        }
+
+        .textos{
+            padding: 10%;
+
+        }
+
+         /*Terceira parte*/
+
+         .terceira{
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .terceira #titulo{
+            font-size: 25px;
+
+        }
+        
+        .ep1 h1, .ep2 h1, .ep3 h1, .ep4 h1, .ep5 h1{
+            font-size: 25px;
+        }
+
+        .ep3 h1{
+            text-align: center;
+
+        }
+
+        .terceira p{
+            padding: 10%;
+
+        }
+
+
+        .terceira h1{
+            padding: 2%;
+        }
+
+
+        /*Footer*/
+
+        footer{
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .tableContainer{
+            padding: 10%;
+            max-width: 100%;
+
+        }
+
+
+}
