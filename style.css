@@ -229,7 +229,7 @@ a:visited {
 .jogos img{
     width: 350px;
     height: 350px;
-    opacity: 100%;
+    opacity: 75%;
     transition-property: all;
     transition-duration: 0.5s;
     transition-delay: 50ms;
@@ -240,7 +240,7 @@ a:visited {
 
 
 .jogos img:hover{
-    opacity: 80%;
+    opacity: 100%;
     scale: 110%;
     
 }
@@ -288,6 +288,7 @@ a:visited {
     border-radius: 10px;
     transition-property: all;
     transition-duration: 0.5s;
+    opacity: 75%;
     transition-delay: 50ms;
 
 
@@ -307,7 +308,7 @@ a:visited {
 
 
 .spinOff img:hover{
-    opacity: 80%;
+    opacity: 100%;
     scale: 110%;
     
 }
